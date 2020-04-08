@@ -15,7 +15,7 @@ int sum_elements(int n)
     return sum;
 }
 
-int main(void)
+int main( void )
 {
     int N; cin >> N;
     int menor = INT_MAX;
