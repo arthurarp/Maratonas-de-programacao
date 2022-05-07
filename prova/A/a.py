@@ -1,0 +1,3 @@
+graph = []
+
+n = input()
