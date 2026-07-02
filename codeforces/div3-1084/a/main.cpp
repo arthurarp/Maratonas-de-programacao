@@ -6,17 +6,35 @@ int main(void)
 {
   ios::sync_with_stdio(false);
 
-  int N; cin >> N;
+  int t; cin >> t;
 
-  if(N == 1)
-    cout << "Hello World\n";
-  else
-  {
-    int a, b; cin >> a >> b;
-    cout << a + b << endl;
-  } 
-  
+  while (t--) {
+    int n; cin >> n;
 
+    int max = 0;
+
+    int v[20];
+
+    for (int i = 0; i < n; ++i) {
+        int x; cin >> x;
+        v[i] = x;
+        if (x > max)
+        max = x;
+    }
+    int possibly_winners = 0;
+    for (int i = 0; i < n; ++i) {
+        if (v[i] == max) {
+            possibly_winners++;
+        }
+
+    }
+        
+
+    
+    cout << possibly_winners << endl;
+
+
+  }
 
   return 0;
 }
